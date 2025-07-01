@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dog Breeds Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    header {
+      background-color: #6c5ce7;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .breed-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .breed-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .breed-card:hover {
+      transform: scale(1.03);
+    }
+
+    .breed-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .breed-card h2 {
+      margin: 0.5rem 0 0.25rem;
+    }
+
+    .breed-card p {
+      padding: 0 1rem 1rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dog Breeds Gallery</h1>
+    <p>Explore popular dog breeds and their images</p>
+  </header>
+
+  <main>
+    <div class="breed-grid">
+      <div class="breed-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg" alt="Golden Retriever">
+        <h2>Golden Retriever</h2>
+        <p>Friendly, intelligent, and devoted breed.</p>
+      </div>
+      <div class="breed-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Berger_allemand_en_montagne_2.jpg/733px-Berger_allemand_en_montagne_2.jpg" alt="German Shepherd">
+        <h2>German Shepherd</h2>
+        <p>Confident, courageous, and smart working dog.</p>
+      </div>
+      <div class="breed-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Labrador_on_Quantock_%282175262184%29.jpg/1200px-Labrador_on_Quantock_%282175262184%29.jpg" alt="Labrador Retriever">
+        <h2>Labrador Retriever</h2>
+        <p>Outgoing, even-tempered, gentle, and agile.</p>
+      </div>
+      <div class="breed-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Shiba_inu_taiki.jpg/250px-Shiba_inu_taiki.jpg" alt="Shiba Inu">
+        <h2>Shiba Inu</h2>
+        <p>Alert, bold, and spirited companion from Japan.</p>
+      </div>
+      <div class="breed-card">
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4syTDR3Abd62tKiRmx9hsJYU0BnYHXuUbinAC-8Q-TF5_7ofIHYnIbEY68b_a5dAWqyymIhRDplYA0PDBstvjzw" alt="Great Dane">
+        <h2>Great Dane</h2>
+        <p>Gentle giant known for its friendly and patient nature.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dog Breeds Gallery</p>
+  </footer>
+</body>
+</html>
